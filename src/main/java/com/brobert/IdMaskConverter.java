@@ -15,8 +15,8 @@ import org.apache.logging.log4j.core.pattern.LogEventPatternConverter;
 @ConverterKeys({ "spi", "trscId" })
 public class IdMaskConverter extends LogEventPatternConverter {
 
-	private static final String CVV_REGEX = "([0-9]{4})";
-	private static final Pattern ID_PATTERN = Pattern.compile(CVV_REGEX);
+	private static final String ID_REGEX = "([0-9]{4})";
+	private static final Pattern ID_PATTERN = Pattern.compile(ID_REGEX);
 	private static final String ID_REPLACEMENT = "XXXX";
 
 
